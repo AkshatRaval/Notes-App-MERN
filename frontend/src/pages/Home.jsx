@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import axios from "axios";
-import { CirclePlus, Pencil, Trash } from "lucide-react";
+import { CirclePlus, Eye, Pencil, Trash } from "lucide-react";
 import { Link } from "react-router-dom";
 import gsap from "gsap";
 
@@ -105,6 +105,14 @@ const Home = () => {
                     📌 Unpin
                   </button>
                   <div className="flex gap-4 text-indigo-700">
+                    <Link to={`/view/${note._id}`}>
+                      <button
+                        aria-label="Edit note"
+                        className="hover:text-indigo-900 transition"
+                      >
+                        <Eye size={24} />
+                      </button>
+                    </Link>
                     <Link to={`/edit/${note._id}`}>
                       <button
                         aria-label="Edit note"
