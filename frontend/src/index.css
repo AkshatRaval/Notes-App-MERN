@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@layer utilities{
+    .buttonHover{ 
+        @apply hover:bg-[#074799] p-1 rounded-full transition hover:text-[#86a2ff] cursor-pointer
+    }
+    .deleteButtonHover{ 
+        @apply hover:bg-[#ED3500] p-2 rounded-full transition hover:text-[#FFFCFB] cursor-pointer
+    }
+    .editButtonHover{ 
+        @apply hover:bg-[#78C841] p-2 rounded-full transition hover:text-[#FFFCFB] cursor-pointer
+    }
+}
